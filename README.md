@@ -3,6 +3,11 @@ Intro to high dimensional statistics for the Intermediate Statistics and Data Ma
 
 # High-Dimensional-Statistics / Data 
 
+## Data Repository
+
+Access the data files used in this project directly from the repository:  
+[High-Dimensional Statistics Data Folder](https://github.com/EleanorSC/High-Dimensional-Statistics/tree/main/Data)
+
 This repository contains datasets and associated descriptions used for analyzing high-dimensional statistics with R. Below are the details of the datasets included in this project.
 
 ---
@@ -107,3 +112,8 @@ Gene expression measurements for over 9000 genes in over 3000 mouse cortex and h
 ---
 
 This repository provides resources for advanced statistical modeling, visualization, and interpretation of high-dimensional biological data in R.
+
+---
+## License
+
+Distributed under the terms of the [MIT license](LICENSE).
