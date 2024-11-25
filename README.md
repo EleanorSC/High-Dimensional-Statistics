@@ -13,8 +13,8 @@ install.packages("BiocManager")
 
 # Download and read dependencies file
 download.file(
-    "https://raw.githubusercontent.com/EleanorSC/High-Dimensional-Statistics/main/dependencies.csv"
-    destfile = 'dependencies.csv'
+  "https://raw.githubusercontent.com/EleanorSC/High-Dimensional-Statistics/main/dependencies.csv",
+  destfile = 'dependencies.csv'
 )
 table <- read.table('dependencies.csv')
 
@@ -26,23 +26,22 @@ dir.create("data", showWarnings = FALSE)
 
 # List of data files to download
 data_files <- c(
-    "cancer_expression.rds",
-    "coefHorvath.rds",
-    "methylation.rds",
-    "scrnaseq.rds",
-    "prostate.rds",
-    "cres.rds"
+  "cancer_expression.rds",
+  "coefHorvath.rds",
+  "methylation.rds",
+  "scRNAseq_data.rds",
+  "prostate.rds"
 )
 
 # Download data files into the "data" directory
 for (file in data_files) {
-    download.file(
-        url = file.path(
-            "https://raw.githubusercontent.com/EleanorSC/High-Dimensional-Statistics/data",
-            file
-        ),
-        destfile = file.path("data", file)
-    )
+  download.file(
+    url = file.path(
+      "https://raw.githubusercontent.com/EleanorSC/High-Dimensional-Statistics/main/Data",
+      file
+    ),
+    destfile = file.path("data", file)
+  )
 }
 ```
 - Installs tools (`BiocManager`) for managing biological data analysis packages.
