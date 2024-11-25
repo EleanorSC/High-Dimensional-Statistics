@@ -1,6 +1,7 @@
 # High-Dimensional-Statistics
 Intro to high dimensional statistics for the Intermediate Statistics and Data Management 2024 course
 
+[All code for exercises](https://eleanorsc.github.io/High-Dimensional-Statistics/)
 ## Setup
 
 ```r
