@@ -33,11 +33,9 @@ dir.create("data", showWarnings = FALSE)
 
 # List of data files to download
 data_files <- c(
-  "cancer_expression.rds",
+  "prostate.rds",
   "coefHorvath.rds",
-  "methylation.rds",
- # "scRNAseq_data.rds", #only to download if there is time for part 6 of lecture
-  "prostate.rds"
+  "methylation.rds"
 )
 
 # Download data files into the "data" directory
@@ -118,51 +116,6 @@ Illumina Human Methylation data from EPIC on sorted peripheral adult blood cell 
 
 [SOURCE](https://github.com/EleanorSC/High-Dimensional-Statistics/tree/main/Data/coefHorvath.rds)
 Methylation markers across different age groups. This dataset includes CpGmarker variables, which are CpG site encodings.
-
----
-
-## Breast Cancer Gene Expression Data
-
-[SOURCE](https://github.com/EleanorSC/High-Dimensional-Statistics/tree/main/Data/cancer_expression.rds)
-Gene expression data obtained from microarray results of 91 breast cancer patient samples, along with metadata for the patients.
-
-### **Data Object**
-- **assay(data)**: gene expression data for each individual
-- **colData(data)**: individual-level metadata
-
-### **Phenotypic Metadata**
-- **Study**: study identifier
-- **Age**: age in years
-- **Distant.RFS**: indicator of distant relapse-free survival
-- **ER**: estrogen receptor positive or negative status
-- **GGI**: gene expression grade index
-- **Grade**: histologic grade
-- **Size**: tumor size in cm
-- **Time.RFS**: time between surgery and diagnosis of relapse (relapse-free survival time)
-
----
-
-## Single-Cell RNA Sequencing Data
-
-[SOURCE](https://github.com/EleanorSC/High-Dimensional-Statistics/tree/main/Data/scRNAseq_data.rds)
-Gene expression measurements for over 9000 genes in over 3000 mouse cortex and hippocampus cells. These data are an excerpt of the original dataset.
-
-### **Data Object**
-- **assay(data)**: gene expression data
-- **colData(data)**: metadata for individual cells
-
-### **Cell Metadata**
-- **tissue**: tissue type
-- **group #**: group number
-- **total mRNA mol**: total number of observed mRNA molecules corresponding to this cell’s unique barcode
-- **well**: well where this cell’s cDNA was stored during processing
-- **sex**: sex of the donor animal
-- **age**: age of the donor animal
-- **diameter**: estimated cell diameter
-- **cell_id**: cell identifier
-- **level1class**: cluster label identified via computational and manual annotation
-- **level2class**: refined cluster label identified via computational and manual annotation
-- **sizeFactor**: size factor estimated for scaling normalization (e.g., scran)
 
 ---
 
