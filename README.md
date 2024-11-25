@@ -60,8 +60,7 @@ for (file in data_files) {
 
 ## Data Repository
 
-Access the data files used in this project directly from the repository:  
-[Data](https://github.com/EleanorSC/High-Dimensional-Statistics/tree/main/Data)
+Access the data files used in this project directly from the repository:  [Data](https://github.com/EleanorSC/High-Dimensional-Statistics/tree/main/Data)
 
 This repository contains datasets and associated descriptions used for analyzing high-dimensional statistics with R. Below are the details of the datasets included in this project.
 
