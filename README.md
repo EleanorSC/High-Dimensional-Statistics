@@ -13,7 +13,7 @@ install.packages("BiocManager")
 
 # Download and read dependencies file
 download.file(
-    "https://raw.githubusercontent.com/EleanorSC/High-Dimensional-Statistics/dependencies.csv",
+    "https://raw.githubusercontent.com/EleanorSC/High-Dimensional-Statistics/main/dependencies.csv"
     destfile = 'dependencies.csv'
 )
 table <- read.table('dependencies.csv')
@@ -45,14 +45,18 @@ for (file in data_files) {
     )
 }
 ```
+Installs tools (BiocManager) for managing biological data analysis packages.
+Downloads a list of necessary R packages from GitHub.
+Installs these R packages.
+Creates a folder (data) to store project data.
+Downloads specific data files into this folder from GitHub.
+This code prepares your R environment by setting up all the required packages and data for the project.
 
-
-# High-Dimensional-Statistics / Data 
 
 ## Data Repository
 
 Access the data files used in this project directly from the repository:  
-[High-Dimensional Statistics Data Folder](https://github.com/EleanorSC/High-Dimensional-Statistics/tree/main/Data)
+[Data](https://github.com/EleanorSC/High-Dimensional-Statistics/tree/main/Data)
 
 This repository contains datasets and associated descriptions used for analyzing high-dimensional statistics with R. Below are the details of the datasets included in this project.
 
