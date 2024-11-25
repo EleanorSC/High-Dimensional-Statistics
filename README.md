@@ -3,7 +3,12 @@ Intro to high dimensional statistics for the Intermediate Statistics and Data Ma
 
 ## Setup
 
-You will need to have certain dependencies set up for this course. This should take about an hour to run, depending on the speed of your computer, your internet connection, and any packages you have installed already. You’ll need to install R 4.0 or later.
+```r
+# Setup your working directory, e.g.
+setwd("/Users/eleanorc_worklaptop/repos/High_Dimensional_Stats")
+```
+
+You will need to have certain dependencies set up for this course. This should not take long to run, but depends on the speed of your computer, your internet connection, and any packages you have installed already - getting this set up before the course is therefore optional. You’ll need to install R 4.0 or later.
 
 R usually enables package downloads using pre-built binaries. Some times, this is not possible, particularly on Linux and Mac systems. In this case, R package installation often requires additional system dependencies. If you are a Linux user, to ensure that you can download packages using the code below, first run the terminal commands for your distribution here. Note that you will need to use root access (sudo) to install the system dependencies. Mac users may need to use homebrew to install system dependencies, and Windows users may need to install RTools. Ideally, installing packages will proceed without error and you can ignore these steps, but this isn’t always the case.
 
@@ -11,6 +16,7 @@ R usually enables package downloads using pre-built binaries. Some times, this i
 # Install BiocManager
 install.packages("BiocManager")
 
+#High-Dimensional Statistics Data Folder](https://github.com/EleanorSC/High-Dimensional-Statistics/tree/main/Data)
 # Download and read dependencies file
 download.file(
   "https://raw.githubusercontent.com/EleanorSC/High-Dimensional-Statistics/main/dependencies.csv",
@@ -29,7 +35,7 @@ data_files <- c(
   "cancer_expression.rds",
   "coefHorvath.rds",
   "methylation.rds",
-  "scRNAseq_data.rds",
+ # "scRNAseq_data.rds", #only to download if there is time for part 6 of lecture
   "prostate.rds"
 )
 
