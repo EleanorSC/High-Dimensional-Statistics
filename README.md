@@ -45,7 +45,7 @@ for (file in data_files) {
     )
 }
 ```
-- Installs tools (BiocManager) for managing biological data analysis packages.
+- Installs tools (`BiocManager`) for managing biological data analysis packages.
 - Downloads a list of necessary R packages from GitHub.
 - Installs these R packages.
 - Creates a folder (data) to store project data.
