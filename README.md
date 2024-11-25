@@ -45,12 +45,12 @@ for (file in data_files) {
     )
 }
 ```
-Installs tools (BiocManager) for managing biological data analysis packages.
-Downloads a list of necessary R packages from GitHub.
-Installs these R packages.
-Creates a folder (data) to store project data.
-Downloads specific data files into this folder from GitHub.
-This code prepares your R environment by setting up all the required packages and data for the project.
+- Installs tools (BiocManager) for managing biological data analysis packages.
+- Downloads a list of necessary R packages from GitHub.
+- Installs these R packages.
+- Creates a folder (data) to store project data.
+- Downloads specific data files into this folder from GitHub.
+- This code prepares your R environment by setting up all the required packages and data for the project.
 
 
 ## Data Repository
