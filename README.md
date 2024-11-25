@@ -60,8 +60,6 @@ This repository contains datasets and associated descriptions used for analyzing
 
 ## Prostate Cancer Data
 
-### **Source**
-
 [SOURCE](https://github.com/EleanorSC/High-Dimensional-Statistics/tree/main/Data/prostate.rds)
 Prostate-specific antigen values and clinical measures for 97 patients hospitalized for a radical prostatectomy. Prostate specimens underwent histological and morphometric analysis.
 
@@ -80,7 +78,7 @@ Prostate-specific antigen values and clinical measures for 97 patients hospitali
 
 ## Methylation Data
 
-### **Source**
+[SOURCE](https://github.com/EleanorSC/High-Dimensional-Statistics/tree/main/Data/methylation.rds)
 Illumina Human Methylation data from EPIC on sorted peripheral adult blood cell populations. The dataset records DNA methylation assays, which measure the proportion of DNA that carries a methyl mark. The assays are normalized methylation levels (M-values), with:
 - Negative values: unmethylated DNA
 - Positive values: methylated DNA
@@ -109,14 +107,14 @@ Illumina Human Methylation data from EPIC on sorted peripheral adult blood cell 
 
 ## Horvath Data
 
-### **Source**
+[SOURCE](https://github.com/EleanorSC/High-Dimensional-Statistics/tree/main/Data/coefHorvath.rds)
 Methylation markers across different age groups. This dataset includes CpGmarker variables, which are CpG site encodings.
 
 ---
 
 ## Breast Cancer Gene Expression Data
 
-### **Source**
+[SOURCE](https://github.com/EleanorSC/High-Dimensional-Statistics/tree/main/Data/cancer_expression.rds)
 Gene expression data obtained from microarray results of 91 breast cancer patient samples, along with metadata for the patients.
 
 ### **Data Object**
@@ -137,7 +135,7 @@ Gene expression data obtained from microarray results of 91 breast cancer patien
 
 ## Single-Cell RNA Sequencing Data
 
-### **Source**
+[SOURCE](https://github.com/EleanorSC/High-Dimensional-Statistics/tree/main/Data/scRNAseq_data.rds)
 Gene expression measurements for over 9000 genes in over 3000 mouse cortex and hippocampus cells. These data are an excerpt of the original dataset.
 
 ### **Data Object**
