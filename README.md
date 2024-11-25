@@ -1,6 +1,52 @@
 # High-Dimensional-Statistics
 Intro to high dimensional statistics for the Intermediate Statistics and Data Management 2024 course
 
+## Setup
+
+You will need to have certain dependencies set up for this course. This should take about an hour to run, depending on the speed of your computer, your internet connection, and any packages you have installed already. You’ll need to install R 4.0 or later.
+
+R usually enables package downloads using pre-built binaries. Some times, this is not possible, particularly on Linux and Mac systems. In this case, R package installation often requires additional system dependencies. If you are a Linux user, to ensure that you can download packages using the code below, first run the terminal commands for your distribution here. Note that you will need to use root access (sudo) to install the system dependencies. Mac users may need to use homebrew to install system dependencies, and Windows users may need to install RTools. Ideally, installing packages will proceed without error and you can ignore these steps, but this isn’t always the case.
+
+```r
+# Install BiocManager
+install.packages("BiocManager")
+
+# Download and read dependencies file
+download.file(
+    "https://raw.githubusercontent.com/EleanorSC/High-Dimensional-Statistics/dependencies.csv",
+    destfile = 'dependencies.csv'
+)
+table <- read.table('dependencies.csv')
+
+# Install dependencies using BiocManager
+BiocManager::install(table[[1]])
+
+# Create a directory for data files
+dir.create("data", showWarnings = FALSE)
+
+# List of data files to download
+data_files <- c(
+    "cancer_expression.rds",
+    "coefHorvath.rds",
+    "methylation.rds",
+    "scrnaseq.rds",
+    "prostate.rds",
+    "cres.rds"
+)
+
+# Download data files into the "data" directory
+for (file in data_files) {
+    download.file(
+        url = file.path(
+            "https://raw.githubusercontent.com/EleanorSC/High-Dimensional-Statistics/data",
+            file
+        ),
+        destfile = file.path("data", file)
+    )
+}
+```
+
+
 # High-Dimensional-Statistics / Data 
 
 ## Data Repository
