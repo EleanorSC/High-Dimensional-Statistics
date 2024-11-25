@@ -5,10 +5,10 @@ Intro to high dimensional statistics for the Intermediate Statistics and Data Ma
 
 ```r
 # Setup your working directory, e.g.
-setwd("/Users/eleanorc_worklaptop/repos/High_Dimensional_Stats")
+setwd("/Users/username/repos/High_Dimensional_Stats")
 ```
 
-You will need to have certain dependencies set up for this course. This should not take long to run, but depends on the speed of your computer, your internet connection, and any packages you have installed already - getting this set up before the course is therefore optional. You’ll need to install R 4.0 or later.
+You will need to have certain dependencies set up for this course. This should not take long to run, but depends on the speed of your computer, your internet connection, and any packages you have installed already - getting this set up before the course is therefore optimal. You’ll need to install R 4.0 or later.
 
 R usually enables package downloads using pre-built binaries. Some times, this is not possible, particularly on Linux and Mac systems. In this case, R package installation often requires additional system dependencies. If you are a Linux user, to ensure that you can download packages using the code below, first run the terminal commands for your distribution here. Note that you will need to use root access (sudo) to install the system dependencies. Mac users may need to use homebrew to install system dependencies, and Windows users may need to install RTools. Ideally, installing packages will proceed without error and you can ignore these steps, but this isn’t always the case.
 
