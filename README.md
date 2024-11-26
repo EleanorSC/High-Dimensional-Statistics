@@ -17,7 +17,6 @@ R usually enables package downloads using pre-built binaries. Some times, this i
 # Install BiocManager
 install.packages("BiocManager")
 
-#High-Dimensional Statistics Data Folder](https://github.com/EleanorSC/High-Dimensional-Statistics/tree/main/Data)
 # Download and read dependencies file
 download.file(
   "https://raw.githubusercontent.com/EleanorSC/High-Dimensional-Statistics/main/dependencies.csv",
